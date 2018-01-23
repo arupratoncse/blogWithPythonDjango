@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}
+Create author account
+{% endblock %}
+{% block stylesheet %}
+
+{% endblock %}
+{% block profile %}
+
+{% endblock %}
+{% block contant %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-primary ">
+              <div class="panel-heading">
+                <h3 class="panel-title">Create Author Account</h3>
+              </div>
+              <div class="panel-body">
+                <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="btn btn-primary pull pull">Create Author</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block script %}
+
+{% endblock %}
